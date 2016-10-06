@@ -8,12 +8,12 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/article-one',function(req,res){
+app.get('/article1',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
 
-app.get('/articl2',function(req,res){
+app.get('/article2',function(req,res){
     
  res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
     
@@ -22,7 +22,7 @@ app.get('/articl2',function(req,res){
 
 app.get('/article3',function(req,res){
     
-    res.send("Araticle 3 requested will be saved here");
+    res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
     
 });
 
